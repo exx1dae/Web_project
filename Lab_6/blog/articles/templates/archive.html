@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="header">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1200px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+      alt="" width="256" height="256" />
+  </div>
+  <div class="archive">
+    {% for post in posts %}
+    <div class="one-post">
+      <h2 class="post-title">
+        <a href="http://127.0.0.1:8000/article/{{post.id}}">{{post.title}}</a>
+      </h2>
+      <div class="article-info">
+        <div class="article-author">{{ post.author.username }}</div>
+        <div class="article-created-date">{{ post.created_date }}</div>
+      </div>
+    </div>
+    <p class="article-text">{{ post.get_excerpt }}</p>
+  </div>
+  {% endfor %}
+</body>
+
+</html>

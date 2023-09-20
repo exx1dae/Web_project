@@ -57,7 +57,7 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            "/Users/sarkisshainyan/Desktop/projectsVSC/Web/Lab_2/firstwebpage/flatpages"
+            "C:\\Users\\sarki\\OneDrive\\Рабочий стол\\MTUCI\\Web программирование\\Web_project\\Lab_2\\firstwebpage\\flatpages"
         ],
         "APP_DIRS": True,
         "OPTIONS": {
