@@ -1,5 +1,3 @@
-.rar
+*.rar
 
-.pdf
-
-venv/
+*.pdf
